@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Press+Start+2P&family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #dde;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* **************** hero **************** */
+#hero{
+    height: 100vh;
+    background: url(../img/hero.jpg) center/cover no-repeat;
+    position: relative;
+}
+
+#hero h1{
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    font-size: 9em;
+}
+
+#hero h1:last-of-type{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* **************** nav **************** */
+#pos_sticky{
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: #ffffff99;
+}
+
+nav #logo{
+    display: inline-block;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    font-size: 2em;
+    padding: 10px 20px 5px;
+    background: #fff;
+    border: 2px solid #333;
+}
+
+nav ul li{
+    display: inline;
+    margin: 0 1vw;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: .5s ease;
+}
+
+nav ul li a:hover{
+    color: #66e;
+}
+
+/* **************** work **************** */
+#work{
+    padding: 100px 0;
+}
+
+img{
+    width: 100%;
+}
+
+#work h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+#work article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+#work h3{
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+#work p{
+    margin-bottom: 50px;
+}
+
+#work a{
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    transition: 0.5s ease;
+}
+
+#work a:hover{
+    background: #66e;
+}
+
+.work2 img{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.work3 div.txt{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.work3 .Responsiv{
+    margin-top: 20px;
+    justify-self: start;
+}
+
+.work3 .Responsiv img{
+    width: auto;
+    height: 200px;
+}
+
+/* **************** about **************** */
+#about{
+    padding: 100px 0;
+}
+
+#about h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+#about article{
+    padding: 30px 5%;
+}
+
+/* **************** footer **************** */
+footer{
+    padding: 100px 0;
+}
+
+footer h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+footer article{
+    padding: 30px 5%;
+}
+
+footer article a{
+    display: inline-block;
+    padding: 20px 30px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: 0.5s ease;
+}
+
+footer article a:hover{
+    background: #66e;
+}
+
+/* **************** contact **************** */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+#contact{
+    height: 100vh;
+    background: url(../img/hero.jpg) center/cover no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+#contact .white{
+    height: 100vh;
+    width: 130vw;
+    background: #dde;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-20deg);
+    transform-origin: top right;
+}
+
+#contact article{
+    margin: 40vh 5vw 0 50vw;
+    position: relative;
+    text-align: center;
+}
+
+#contact article h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5em;
+    margin-bottom: 50px;
+}
+
+#contact article input, #contact article textarea{
+    display: block;
+    margin: 15px auto;
+    width: 300px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+}
