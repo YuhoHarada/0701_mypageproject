@@ -22,12 +22,38 @@ body{
     font-family: 'Press Start 2P', cursive;
     color: #fff;
     font-size: 9em;
+    position: absolute;
+}
+
+#hero h1:first-of-type{
+    top: 0;
+    left: 100vw;
+    animation:
+    title1_move 1s linear forwards,
+    t_blink 0.1s 1s linear 3 forwards;
 }
 
 #hero h1:last-of-type{
-    position: absolute;
     bottom: 0;
-    right: 0;
+    right: 100vw;
+    animation:
+    title2_move 1s 1s linear forwards,
+    t_blink 0.1s 2s linear 3 forwards;
+}
+
+@keyframes title1_move{
+    0%{left: 100vw;}
+    100%{left: 0;}
+}
+
+@keyframes title2_move{
+    0%{right: 100vw;}
+    100%{right: 0;}
+}
+
+@keyframes t_blink{
+    0%,100%{opacity: 1;}
+    50%{opacity: 0;}
 }
 
 /* **************** nav **************** */
@@ -144,7 +170,28 @@ img{
 }
 
 #about article{
-    padding: 30px 5%;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+#about img{
+    width: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+#about div{
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg) translateX(20px);
+}
+
+#about p{
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
 }
 
 /* **************** footer **************** */
@@ -159,7 +206,7 @@ footer h2{
 }
 
 footer article{
-    padding: 30px 5%;
+    padding: 0 5%;
 }
 
 footer article a{
